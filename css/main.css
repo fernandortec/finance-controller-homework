@@ -223,7 +223,7 @@
   border: 1px solid #000;
 }
 
-.index-container {
+.second-index {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1000px 1fr;
@@ -233,18 +233,18 @@
       grid-template-areas: '. . .' '. LG .' '. . .';
 }
 
-.index-container .login-container {
+.second-index .login-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
 }
 
-.index-container .login-container div:first-child {
+.second-index .login-container div:first-child {
   padding: 100px;
 }
 
-.index-container .login-container::before {
+.second-index .login-container::before {
   content: '';
   position: absolute;
   top: 0px;
@@ -258,15 +258,15 @@
   background-position: center;
 }
 
-.index-container .login-container .form-group {
+.second-index .login-container .form-group {
   margin-top: 20px;
 }
 
-.index-container .login-container .form-group label {
+.second-index .login-container .form-group label {
   color: gray;
 }
 
-.index-container .login-container .form-group div {
+.second-index .login-container .form-group div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +279,7 @@
   margin-top: 5px;
 }
 
-.index-container .login-container .form-group div input {
+.second-index .login-container .form-group div input {
   outline: 0;
   border: 0;
   margin-left: 10px;
