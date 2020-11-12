@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+.index-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 380px 640px 1fr;
+      grid-template-columns: 1fr 380px 640px 1fr;
+  -ms-grid-rows: 1fr 340px 340px 1fr;
+      grid-template-rows: 1fr 340px 340px 1fr;
+      grid-template-areas: '. . . .' '. SM LG .' '. SM LG .' '. . . .';
+}
+
+.index-container .side-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: lightgray;
+  background: #282829;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: SM;
+  position: relative;
+}
+
+.index-container .side-container::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0.03;
+  background-image: url("../assets/images/bank.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.index-container .side-container div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 60px 0px;
+}
+
+.index-container .side-container h1 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.index-container .login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  background: #fff;
+  text-align: left;
+  z-index: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: LG;
+}
+
+.index-container .login-container::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0.023;
+  z-index: -1;
+  background-image: url("../assets/images/checkerboard.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.index-container .login-container div:first-child {
+  padding-left: 90px;
+}
+
+.index-container .login-container div:first-child p {
+  color: gray;
+}
+
+.index-container .login-container div:first-child .form-group {
+  margin-top: 20px;
+}
+
+.index-container .login-container div:first-child .form-group label {
+  color: gray;
+}
+
+.index-container .login-container div:first-child .form-group div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #196e9c;
+  margin-top: 5px;
+}
+
+.index-container .login-container div:first-child .form-group div input {
+  outline: 0;
+  border: 0;
+  margin-left: 10px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 20px;
+  font-size: 14px;
+  border-left: 1px solid #196e9c;
+}
+
+.index-container .login-container div:first-child .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.index-container .login-container div:first-child .checkbox input {
+  margin-right: 10px;
+}
+
+.index-container .login-container div:first-child button {
+  padding: 13px 86px;
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+}
+
+.index-container .login-container .token {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.8;
+  color: gray;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 5px;
+}
+
+.index-container .login-container .token b {
+  margin-left: 5px;
+}
+
+.index-container .login-container .account {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.index-container .login-container .account button {
+  padding: 10px 46px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  margin-left: 20px;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+  cursor: pointer;
+}
+
+.index-container .login-container .account button:hover {
+  border: 1px solid #000;
+}
+
+.index-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1000px 1fr;
+      grid-template-columns: 1fr 1000px 1fr;
+  -ms-grid-rows: 1fr 700px 1fr;
+      grid-template-rows: 1fr 700px 1fr;
+      grid-template-areas: '. . .' '. LG .' '. . .';
+}
+
+.index-container .login-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.index-container .login-container div:first-child {
+  padding: 100px;
+}
+
+.index-container .login-container::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0.023;
+  z-index: -1;
+  background-image: url("../assets/images/checkerboard.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.index-container .login-container .form-group {
+  margin-top: 20px;
+}
+
+.index-container .login-container .form-group label {
+  color: gray;
+}
+
+.index-container .login-container .form-group div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #196e9c;
+  margin-top: 5px;
+}
+
+.index-container .login-container .form-group div input {
+  outline: 0;
+  border: 0;
+  margin-left: 10px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 20px;
+  font-size: 14px;
+  border-left: 1px solid #196e9c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, input, button {
+  font-family: 'Poppins',sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a8ce67), to(#568d3a));
+  background-image: linear-gradient(#a8ce67, #568d3a);
+}
