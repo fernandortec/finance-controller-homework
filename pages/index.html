@@ -6,7 +6,44 @@
     <title>Logar</title>
   </head>
   <body>
-    <div class="index-container" id="app">
+    <div class="index-container" id="index">
+      <nav>
+        <h2>Controle financeiro pessoal</h2>
+
+        <div>
+          <h3 class=""><a href="menu.html">Home</a></h3>
+        </div>
+
+        <div>
+          <h3 class="active"><a href="">Usuarios</a></h3>
+        </div>
+
+        <div>
+          <h3><a href="departaments.html">Gerenciar categorias</a></h3>
+        </div>
+
+        <div class="go-back">
+          <a href="index.html">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              size="28"
+              color=""
+              height="28"
+              width="28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
       <div class="side-container">
         <div>
           <div>
@@ -41,7 +78,7 @@
         </div>
       </div>
       <div class="login-container">
-        <div>
+        <form>
           <h1>Entre na plataforma</h1>
           <p>Informe seu login e senha logo abaixo</p>
 
@@ -66,7 +103,7 @@
                 ></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
-              <input type="text" placeholder="Email" name="" />
+              <input type="text" required placeholder="Email" name="" />
             </div>
           </div>
 
@@ -90,17 +127,17 @@
                   d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"
                 ></path>
               </svg>
-              <input type="text" placeholder="Senha" name="" />
+              <input type="text" required placeholder="Senha" name="" />
             </div>
           </div>
 
           <div class="checkbox">
-            <input type="checkbox" name="" id=""/>
+            <input type="checkbox" name="" id="" />
             <p>Permanecer logado ?</p>
           </div>
 
           <button type="submit">LOGAR</button>
-        </div>
+        </form>
         <div class="account">
           <p>Não tem uma conta?</p>
           <a href="signup.html"><button>CRIAR CONTA</button></a>

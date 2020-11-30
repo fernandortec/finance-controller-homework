@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import 'index';
 @import 'signup';
+@import 'departments';
+@import 'menu';
 
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-*,input,button {
-  font-family: 'Poppins',sans-serif;
+*,
+input,
+button {
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -20,9 +24,144 @@ a {
   text-decoration: none;
 }
 
-#app {
+.index-container {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(#a8ce67, #568d3a);
+  display: grid;
+  grid-template-columns: 1fr 380px 640px 1fr;
+  grid-template-rows: 1fr 340px 340px 1fr;
+  grid-template-areas:
+    '. . . .'
+    '. SM LG .'
+    '. SM LG .'
+    '. . . .';
 }
 
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  background: #fff;
+  text-align: left;
+  z-index: 1;
+  grid-area: LG;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.023;
+    z-index: -1;
+    background-image: url('../assets/images/checkerboard.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  form {
+    padding-left: 90px;
+
+    h1 {
+      font-weight: 500;
+    }
+
+    p {
+      color: gray;
+    }
+  }
+}
+
+.form-group {
+  margin-top: 20px;
+
+  label {
+    color: gray;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #196e9c;
+    margin-top: 5px;
+
+    input {
+      outline: 0;
+      border: 0;
+      margin-left: 10px;
+      width: 100%;
+      padding-left: 5px;
+      padding-right: 20px;
+      font-size: 14px;
+      border-left: 1px solid #196e9c;
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+
+  input {
+    margin-right: 10px;
+  }
+}
+
+button {
+  padding: 13px 86px;
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+}
+
+.token {
+  display: flex;
+  opacity: 0.8;
+  color: gray;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 5px;
+
+  b {
+    margin-left: 5px;
+  }
+}
+
+.account {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+
+  button {
+    padding: 10px 46px;
+    background: none;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    color:#000;
+    margin-left: 20px;
+    transition: border 0.2s;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid #000;
+    }
+  }
+}

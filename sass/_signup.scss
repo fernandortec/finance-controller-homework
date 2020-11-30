@@ -1,4 +1,4 @@
-.second-index {
+#signup {
   display: grid;
   grid-template-columns: 1fr 1040px 1fr;
   grid-template-rows: 1fr 740px 1fr;
@@ -9,10 +9,13 @@
 
   .login-container {
     align-items: center;
-      z-index: 1;
+    z-index: 1;
 
     div:first-child {
       padding:100px;
+      h1 {
+        font-weight: 500;
+      }
     }
 
     &::before {
